@@ -2,6 +2,8 @@
 
 TreeniTrack Pro on moderni, tekoälypohjainen treenipäiväkirja, joka on suunniteltu auttamaan sinua seuraamaan edistymistäsi, analysoimaan suorituksiasi ja saavuttamaan kuntotavoitteesi maailmanluokan tekoälyvalmentajan avulla.
 
+![TreeniTrack Pro](assets/screenshot.png)
+
 ## Keskeiset ominaisuudet
 
 - **Älykäs treenien kirjaaminen:** Nopeampi syöttö liike-ehdotusten ja modernien käyttöliittymäelementtien avulla.
