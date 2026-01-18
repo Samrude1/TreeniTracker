@@ -34,8 +34,8 @@ Moderni, responsiivinen design toimii saumattomasti niin puhelimella, tabletilla
 ## 🎯 Kenelle?
 
 - **Aloittelijoille** – Selkeä käyttöliittymä ja AI-valmentajan tuki tekevät aloittamisesta helppoa
-- **Kokeneille kuntoilijoille** – Tarkat tilastot ja analyysit vievät treenin seuraavalle tasolle
-- **Personal trainereille** – Seuraa asiakkaiden edistymistä ammattimaisilla työkaluilla
+- **Aktiiviliikkujille** – Seuraa edistymistäsi ja pidä treenirutiinisi kunnossa
+- **Tavoitteellisille treenaajille** – Tarkat tilastot ja analyysit vievät treenin seuraavalle tasolle
 
 ---
 
