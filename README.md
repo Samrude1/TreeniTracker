@@ -53,9 +53,14 @@ Rakennettu moderneilla teknologioilla parhaan käyttökokemuksen takaamiseksi:
 
 ---
 
-## 📄 Lisenssi
+## 📜 License & Usage
 
-MIT License – Vapaa käyttö ja muokkaus.
+This repository is primarily a **Showcase** of my technical skills and architectural capability.
+While the code is public to demonstrate code quality:
+
+1.  **Strictly Personal:** The design, copy, and specific implementation details are tailored to my personal brand.
+2.  **No License for Reuse:** Please do not fork, copy, or deploy this site as your own portfolio or application.
+3.  **Inquiries:** For business inquiries or collaboration, please contact me via LinkedIn.
 
 ---
 
