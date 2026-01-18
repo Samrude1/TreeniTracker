@@ -1,0 +1,9 @@
+# Ympäristömuuttujat
+.env
+
+# Riippuvuudet
+node_modules/
+
+# Käyttöjärjestelmäkohtaiset
+.DS_Store
+Thumbs.db

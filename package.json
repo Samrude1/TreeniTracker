@@ -1,0 +1,37 @@
+{
+  "name": "treenitrack-pro",
+  "version": "1.0.0",
+  "description": "Moderni AI-pohjainen treenisovellus kuntosaliharjoittelun ja ravinnon seurantaan.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/genai": "^1.34.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "recharts": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "autoprefixer": "^10.4.23",
+    "lucide-react": "^0.562.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0",
+    "vite": "^7.3.0"
+  },
+  "keywords": [
+    "fitness",
+    "workout",
+    "gym",
+    "ai",
+    "gemini",
+    "nutrition",
+    "tracker"
+  ],
+  "author": "",
+  "license": "MIT"
+}
