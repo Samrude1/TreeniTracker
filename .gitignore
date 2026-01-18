@@ -1,9 +1,25 @@
 # Ympäristömuuttujat
 .env
+.env.local
 
 # Riippuvuudet
 node_modules/
 
+# Build output
+dist/
+build/
+
+# Dokumentit ja kuvat
+documents/
+
 # Käyttöjärjestelmäkohtaiset
 .DS_Store
 Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.local
