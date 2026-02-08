@@ -53,14 +53,14 @@ Rakennettu moderneilla teknologioilla parhaan käyttökokemuksen takaamiseksi:
 
 ---
 
-## 📜 License & Usage
+## 📜 Lisenssi & Käyttöehdot
 
-This repository is primarily a **Showcase** of my technical skills and architectural capability.
-While the code is public to demonstrate code quality:
+Tämä repositorio on ensisijaisesti **näyteikkuna** teknisestä osaamisestani ja arkkitehtuurisesta kyvykkyydestäni.
+Vaikka koodi on julkista koodin laadun osoittamiseksi:
 
-1.  **Strictly Personal:** The design, copy, and specific implementation details are tailored to my personal brand.
-2.  **No License for Reuse:** Please do not fork, copy, or deploy this site as your own portfolio or application.
-3.  **Inquiries:** For business inquiries or collaboration, please contact me via LinkedIn.
+1.  **Täysin henkilökohtainen:** Suunnittelu, tekstit ja tietyt toteutuksen yksityiskohdat on räätälöity henkilökohtaista brändiäni varten.
+2.  **Ei uudelleenkäyttölisenssiä:** Ethän forkkaa, kopioi tai julkaise tätä sivustoa omana portfolionasi tai sovelluksenasi.
+3.  **Tiedustelut:** Liiketoimintatiedusteluissa tai yhteistyöehdotuksissa, otathan yhteyttä LinkedInin kautta.
 
 ---
 
