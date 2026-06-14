@@ -9,15 +9,32 @@ const LockScreen: React.FC<Props> = ({ onUnlock }) => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        const correctPassword = (import.meta as any).env.VITE_APP_PASSWORD;
 
-        // Jos salasanaa ei ole asetettu (kehitysympäristö), päästetään läpi
-        if (!correctPassword || password === correctPassword) {
-            sessionStorage.setItem('treenitrack_unlocked', 'true');
-            onUnlock();
-        } else {
+        try {
+            const response = await fetch('/api/verify_password', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ password })
+            });
+
+            if (!response.ok) {
+                throw new Error('Network error');
+            }
+
+            const data = await response.json();
+
+            if (data.success) {
+                sessionStorage.setItem('treenitrack_unlocked', 'true');
+                onUnlock();
+            } else {
+                setError(true);
+                setTimeout(() => setError(false), 2000);
+                setPassword('');
+            }
+        } catch (err) {
+            console.error(err);
             setError(true);
             setTimeout(() => setError(false), 2000);
             setPassword('');

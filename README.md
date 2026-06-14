@@ -160,7 +160,13 @@ AI-valmentaja noudattaa Arnoldin legendaarisia periaatteita:
 
 ```
 treenitrack/
-├── components/           # React-komponentit
+├── api/                 # Serverless backend
+│   ├── chat.ts          # Tekoälychatin reitti
+│   ├── feedback.ts      # Palaute-tekoälyn reitti
+│   ├── program.ts       # Ohjelma-tekoälyn reitti
+│   └── verify_password.ts # Salasanatarkistuksen reitti
+├── src/
+│   ├── components/      # React-komponentit
 │   ├── AIChat.tsx       # AI-keskustelukomponentti
 │   ├── Dashboard.tsx    # Pääkojelauta
 │   ├── History.tsx      # Treenihistoria
@@ -259,18 +265,24 @@ Muokkaa `.env` tiedostoa ja lisää Google Gemini API -avaimesi:
 
 ```env
 VITE_GEMINI_API_KEY=your_actual_api_key_here
+GEMINI_API_KEY=your_actual_api_key_here
 VITE_APP_PASSWORD=optional_pin_code_for_lock_screen
+APP_PASSWORD=optional_pin_code_for_lock_screen
 ```
 
-**Huom:** `VITE_APP_PASSWORD` on valinnainen. Jos asetat sen, sovellus vaatii PIN-koodin käynnistyessä.
+**Huom:** Sovelluksen salasanan voi asettaa joko `VITE_APP_PASSWORD` tai `APP_PASSWORD` -muuttujaan, se on turvassa taustapalvelimella. API-avaimet toimivat samoin.
 
 4. **Käynnistä kehityspalvelin**
 
 ```bash
-npm run dev
+# Asenna Vercel CLI (vain ensimmäisellä kerralla)
+npm install -g vercel
+
+# Käynnistä kehityspalvelin turvallisten taustatoimintojen kera
+vercel dev
 ```
 
-Sovellus käynnistyy osoitteessa: `http://localhost:3000`
+Sovellus käynnistyy osoitteessa `http://localhost:3000`.
 
 5. **Rakenna tuotantoversio**
 

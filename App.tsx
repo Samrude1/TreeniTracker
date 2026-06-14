@@ -120,9 +120,21 @@ const App: React.FC = () => {
     setProfile(finalProfile);
   };
 
-  // 1. Check if app is locked (only if VITE_APP_PASSWORD is set)
-  const appPassword = (import.meta as any).env.VITE_APP_PASSWORD;
-  if (appPassword && !isAuthenticated) {
+  const [isPasswordRequired, setIsPasswordRequired] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    fetch('/api/verify_password')
+      .then(res => res.json())
+      .then(data => setIsPasswordRequired(data.isPasswordRequired))
+      .catch(() => setIsPasswordRequired(false));
+  }, []);
+
+  if (isPasswordRequired === null) {
+      return <div className="min-h-screen flex items-center justify-center text-slate-400">Ladataan...</div>;
+  }
+
+  // 1. Check if app is locked
+  if (isPasswordRequired && !isAuthenticated) {
     return <LockScreen onUnlock={() => setIsAuthenticated(true)} />;
   }
 
